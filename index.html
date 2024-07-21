@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
-<body>
+<body class="container">
     <div class="hero-header">
         <div class="wrapper">
             <header>
@@ -29,7 +30,7 @@
                 </nav>
             </header>
             <div class="dependables" id="home">
-                <div class="container" id="spaced">
+                <div class="container-1" id="spaced">
                     <div class="hero-pic">
                         <img src="images/main_photo.jpg" alt="profile pic">
                     </div>
@@ -50,9 +51,9 @@
                         </p>
                         </p>
 
-                        <div class="btn-group">
-                            <a href="#" class="btn active">Download CV</a>
-                            <a href="#" class="btn">Contact</a>
+                        <div class="button-wrapper">
+                            <button><a href="#" class="confetti-button">Download CV</a></button>
+                            <button> <a href="#" class="btn">Contact</a></button>
                         </div>
                         <div class="social">
                             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -71,6 +72,7 @@
 
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script src="js/main.js"></script>
 </body>

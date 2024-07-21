@@ -1,5 +1,6 @@
 let sections = document.querySelectorAll('.dependables');
 let navLinks = document.querySelectorAll('header nav a');
+// let confettiButton = document.getElementById('confetti-button')
 
 window.onscroll = () => {
     sections.forEach(section => {
@@ -16,6 +17,27 @@ window.onscroll = () => {
         }
     });
 };
+
+
+document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
+    let canvas = document.createElement("canvas");
+    let container = document.getElementsByClassName("button-wrapper")[0];
+    canvas.width = 600;
+    canvas.height = 600;
+
+    container.appendChild(canvas);
+
+    let confetti_button = confetti.create(canvas);
+    confetti_button().then(() => container.removeChild(canvas));
+    confetti_button({
+        particleCount: 200,
+        spread: 200,
+        startVelocity: 15,
+        scalar: 0.9,
+        ticks: 90
+    })
+});
+
 
 
 
@@ -36,11 +58,8 @@ let typed = new Typed(".input", {
         "Experienced with Firebase"
     ],
     typeSpeed: 60, // Slightly faster typing
-    backSpeed: 40,  // Slightly slower backspacing
+    backSpeed: 40, // Slightly slower backspacing
     backDelay: 1000, // Delay before starting to delete text
     startDelay: 500, // Delay before starting typing
     loop: true
 });
-
-
-

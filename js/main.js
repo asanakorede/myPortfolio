@@ -65,8 +65,21 @@ let typed = new Typed(".input", {
 });
 
 
-    VanillaTilt.init(document.querySelectorAll(".tilt"), {
-        max: 25,
-        speed: 400
-    });
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+    max: 25,
+    speed: 400
+});
 
+document.querySelectorAll('input, textarea').forEach(element => {
+    element.addEventListener('focus', function () {
+        introJs().setOptions({
+            steps: [{
+                intro: this.getAttribute('data-intro')
+            }]
+        }).start().oncomplete(function () {
+            element.focus();
+        }).onexit(function () {
+            element.focus();
+        });
+    });
+});

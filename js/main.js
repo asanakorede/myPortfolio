@@ -63,3 +63,10 @@ let typed = new Typed(".input", {
     startDelay: 500, // Delay before starting typing
     loop: true
 });
+
+
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 25,
+        speed: 400
+    });
+

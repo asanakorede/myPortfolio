@@ -10,6 +10,7 @@
 
 body {
     overflow-x: hidden;
+    background: #222;
 }
 
 .button-wrapper a {
@@ -175,7 +176,7 @@ button {
 }
 
 .hero-text .social i {
-    padding-top: 20px;
+    padding-bottom: 10px;
     color: #e5e5e5;
     font-size: 30px;
     margin-right: 10px;
@@ -190,6 +191,7 @@ button {
 .confetti-button {
     outline: none;
 }
+
 
 .button-wrapper {
     position: relative;
@@ -264,6 +266,245 @@ button:after {
     border-left: 2px solid white;
     animation: border-bottom-left 3s infinite alternate;
 }
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    color: #e5e5e5;
+    background-color: #1f242d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-container h2 {
+    font-size: 2.5rem;
+    color: #007ced;
+    margin-bottom: 20px;
+}
+
+.about-container h3 {
+    font-size: 1.5rem;
+    color: #007ced;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-container p,
+.about-container ul {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    color: #e5e5e5;
+    background-color: #1f242d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.services-container h2 {
+    font-size: 2.5rem;
+    color: #007ced;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: #007ced;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #007ced;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 400px;
+}
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-container h2 {
+    font-size: 1.5rem;
+    color: #007ced;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    background: #1f242d;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+    color: #e5e5e5;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    color: #007ced;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007ced;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    color: #e5e5e5;
+    background-color: #1f242d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    color: #007ced;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    margin: 20px;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: #007ced;
+    margin-right: 10px;
+}
+
+.contact-item a,
+.contact-item p {
+    font-size: 1.2rem;
+    color: #e5e5e5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2f38;
+    color: #e5e5e5;
+}
+
+form button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007ced;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #007ced;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #005bb5;
+}
+
+
+
 
 @keyframes border-bottom-left {
     0% {
